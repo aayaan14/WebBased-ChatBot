@@ -1,0 +1,4 @@
+sample_data/
+.vscode/
+_pycache_/
+venv/

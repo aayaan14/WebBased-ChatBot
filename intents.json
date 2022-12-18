@@ -1,0 +1,932 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hey",
+                "How are you",
+                "Is anyone there?",
+                "Hello",
+                "Good day"
+            ],
+            "responses": [
+                "Hey :-)",
+                "Hello, thanks for visiting",
+                "Hi there, what can I do for you?",
+                "Hi there, how can I help?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye"
+            ],
+            "responses": [
+                "See you later, thanks for visiting",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ]
+        },
+        {
+            "tag": "Sam",
+            "patterns": [
+                "how can you help me",
+                "who are you",
+                "what service do you provide",
+                "what is your name"
+            ],
+            "responses": [
+                "I am Sam, and I can help you with locating professors and their current designation in the AIML department",
+                "I am Sam(bot) who can help you with finding the professor's cabin and their current designation",
+                "Hi!! I am Sam, I can assist you with searching for rooms in the AIML department"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Thank's a lot!"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ]
+        },
+        {
+            "tag": "Vijayalakshmi ma'am_location",
+            "patterns": [
+                "Vijayalakshmi ma'am",
+                "Where can I find Vijayalakshmi ma'am",
+                "Where will Vijayalakshmi ma'am be",
+                "Where is the cabin of Vijayalakshmi ma'am",
+                "Where does Vijayalakshmi ma'am work",
+                "How can I find Vijayalakshmi ma'am",
+                "How can I meet Vijayalakshmi ma'am"
+            ],
+            "responses": [
+                "Vijayalakshmi ma'am can be found in the 1st Floor,  AIML-306 room",
+                "Vijayalakshmi ma'am, Associate Professor , works in the 1st Floor,  AIML-306 room of the AIML department",
+                "Vijayalakshmi ma'am, who's working as Associate Professor, can be found in 1st Floor,  AIML-306 room of AIML"
+            ]
+        },
+        {
+            "tag": "Narasimha sir_location",
+            "patterns": [
+                "Narasimha sir",
+                "Where can I find Narasimha sir",
+                "Where will Narasimha sir be",
+                "Where is the cabin of Narasimha sir",
+                "Where does Narasimha sir work",
+                "How can I find Narasimha sir",
+                "How can I meet Narasimha sir"
+            ],
+            "responses": [
+                "Narasimha sir can be found in the 3rd Floor, AIML-404 room",
+                "Narasimha sir, Assistant Professor , works in the 3rd Floor, AIML-404 room of the AIML department",
+                "Narasimha sir, who's working as Assistant Professor, can be found in 3rd Floor, AIML-404 room of AIML"
+            ]
+        },
+        {
+            "tag": "Babu sir_location",
+            "patterns": [
+                "Babu sir",
+                "Where can I find Babu sir",
+                "Where will Babu sir be",
+                "Where is the cabin of Babu sir",
+                "Where does Babu sir work",
+                "How can I find Babu sir",
+                "How can I meet Babu sir"
+            ],
+            "responses": [
+                "Babu sir can be found in the 2nd Floor, AIML-301 room",
+                "Babu sir, Head of Department , works in the 2nd Floor, AIML-301 room of the AIML department",
+                "Babu sir, who's working as Head of Department, can be found in 2nd Floor, AIML-301 room of AIML"
+            ]
+        },
+        {
+            "tag": "Somesh sir_location",
+            "patterns": [
+                "Somesh sir",
+                "Where can I find Somesh sir",
+                "Where will Somesh sir be",
+                "Where is the cabin of Somesh sir",
+                "Where does Somesh sir work",
+                "How can I find Somesh sir",
+                "How can I meet Somesh sir"
+            ],
+            "responses": [
+                "Somesh sir can be found in the 2nd Floor, AIML-404 room",
+                "Somesh sir, Assistant Professor , works in the 2nd Floor, AIML-404 room of the AIML department",
+                "Somesh sir, who's working as Assistant Professor, can be found in 2nd Floor, AIML-404 room of AIML"
+            ]
+        },
+        {
+            "tag": "Chandrani ma'am_location",
+            "patterns": [
+                "Chandrani ma'am",
+                "Where can I find Chandrani ma'am",
+                "Where will Chandrani ma'am be",
+                "Where is the cabin of Chandrani ma'am",
+                "Where does Chandrani ma'am work",
+                "How can I find Chandrani ma'am",
+                "How can I meet Chandrani ma'am"
+            ],
+            "responses": [
+                "Chandrani ma'am can be found in the Ground Floor, MC-207 room",
+                "Chandrani ma'am, Faculty , works in the Ground Floor, MC-207 room of the MCA department",
+                "Chandrani ma'am, who's working as Faculty, can be found in Ground Floor, MC-207 room of MCA"
+            ]
+        },
+        {
+            "tag": "Divya ma'am_location",
+            "patterns": [
+                "Divya ma'am",
+                "Where can I find Divya ma'am",
+                "Where will Divya ma'am be",
+                "Where is the cabin of Divya ma'am",
+                "Where does Divya ma'am work",
+                "How can I find Divya ma'am",
+                "How can I meet Divya ma'am"
+            ],
+            "responses": [
+                "Divya ma'am can be found in the Ground Floor, MC-207 room",
+                "Divya ma'am, Faculty , works in the Ground Floor, MC-207 room of the MCA department",
+                "Divya ma'am, who's working as Faculty, can be found in Ground Floor, MC-207 room of MCA"
+            ]
+        },
+        {
+            "tag": "Savitha ma'am_location",
+            "patterns": [
+                "Savitha ma'am",
+                "Where can I find Savitha ma'am",
+                "Where will Savitha ma'am be",
+                "Where is the cabin of Savitha ma'am",
+                "Where does Savitha ma'am work",
+                "How can I find Savitha ma'am",
+                "How can I meet Savitha ma'am"
+            ],
+            "responses": [
+                "Savitha ma'am can be found in the Ground Floor, MC-207 room",
+                "Savitha ma'am, Faculty , works in the Ground Floor, MC-207 room of the MCA department",
+                "Savitha ma'am, who's working as Faculty, can be found in Ground Floor, MC-207 room of MCA"
+            ]
+        },
+        {
+            "tag": "Jayasimha sir_location",
+            "patterns": [
+                "Jayasimha sir",
+                "Where can I find Jayasimha sir",
+                "Where will Jayasimha sir be",
+                "Where is the cabin of Jayasimha sir",
+                "Where does Jayasimha sir work",
+                "How can I find Jayasimha sir",
+                "How can I meet Jayasimha sir"
+            ],
+            "responses": [
+                "Jayasimha sir can be found in the Ground Floor, MC-207 room",
+                "Jayasimha sir, Faculty , works in the Ground Floor, MC-207 room of the MCA department",
+                "Jayasimha sir, who's working as Faculty, can be found in Ground Floor, MC-207 room of MCA"
+            ]
+        },
+        {
+            "tag": "Usha ma'am_location",
+            "patterns": [
+                "Usha ma'am",
+                "Where can I find Usha ma'am",
+                "Where will Usha ma'am be",
+                "Where is the cabin of Usha ma'am",
+                "Where does Usha ma'am work",
+                "How can I find Usha ma'am",
+                "How can I meet Usha ma'am"
+            ],
+            "responses": [
+                "Usha ma'am can be found in the 2nd Floor, MC-205 room",
+                "Usha ma'am, Faculty , works in the 2nd Floor, MC-205 room of the MCA department",
+                "Usha ma'am, who's working as Faculty, can be found in 2nd Floor, MC-205 room of MCA"
+            ]
+        },
+        {
+            "tag": "Jasmine ma'am_location",
+            "patterns": [
+                "Jasmine ma'am",
+                "Where can I find Jasmine ma'am",
+                "Where will Jasmine ma'am be",
+                "Where is the cabin of Jasmine ma'am",
+                "Where does Jasmine ma'am work",
+                "How can I find Jasmine ma'am",
+                "How can I meet Jasmine ma'am"
+            ],
+            "responses": [
+                "Jasmine ma'am can be found in the 2nd Floor, MC-209 room",
+                "Jasmine ma'am, Faculty , works in the 2nd Floor, MC-209 room of the MCA department",
+                "Jasmine ma'am, who's working as Faculty, can be found in 2nd Floor, MC-209 room of MCA"
+            ]
+        },
+        {
+            "tag": "Saravanan sir_location",
+            "patterns": [
+                "Saravanan sir",
+                "Where can I find Saravanan sir",
+                "Where will Saravanan sir be",
+                "Where is the cabin of Saravanan sir",
+                "Where does Saravanan sir work",
+                "How can I find Saravanan sir",
+                "How can I meet Saravanan sir"
+            ],
+            "responses": [
+                "Saravanan sir can be found in the Ground Floor, MC-207 room",
+                "Saravanan sir, Faculty , works in the Ground Floor, MC-207 room of the MCA department",
+                "Saravanan sir, who's working as Faculty, can be found in Ground Floor, MC-207 room of MCA"
+            ]
+        },
+        {
+            "tag": "Ashwini ma'am_location",
+            "patterns": [
+                "Ashwini ma'am",
+                "Where can I find Ashwini ma'am",
+                "Where will Ashwini ma'am be",
+                "Where is the cabin of Ashwini ma'am",
+                "Where does Ashwini ma'am work",
+                "How can I find Ashwini ma'am",
+                "How can I meet Ashwini ma'am"
+            ],
+            "responses": [
+                "Ashwini ma'am can be found in the 2nd Floor, MC-209 room",
+                "Ashwini ma'am, Faculty , works in the 2nd Floor, MC-209 room of the MCA department",
+                "Ashwini ma'am, who's working as Faculty, can be found in 2nd Floor, MC-209 room of MCA"
+            ]
+        },
+        {
+            "tag": "Preethi ma'am_location",
+            "patterns": [
+                "Preethi ma'am",
+                "Where can I find Preethi ma'am",
+                "Where will Preethi ma'am be",
+                "Where is the cabin of Preethi ma'am",
+                "Where does Preethi ma'am work",
+                "How can I find Preethi ma'am",
+                "How can I meet Preethi ma'am"
+            ],
+            "responses": [
+                "Preethi ma'am can be found in the 2nd Floor, MC-209 room",
+                "Preethi ma'am, Faculty , works in the 2nd Floor, MC-209 room of the MCA department",
+                "Preethi ma'am, who's working as Faculty, can be found in 2nd Floor, MC-209 room of MCA"
+            ]
+        },
+        {
+            "tag": "Nagamuthu sir_location",
+            "patterns": [
+                "Nagamuthu sir",
+                "Where can I find Nagamuthu sir",
+                "Where will Nagamuthu sir be",
+                "Where is the cabin of Nagamuthu sir",
+                "Where does Nagamuthu sir work",
+                "How can I find Nagamuthu sir",
+                "How can I meet Nagamuthu sir"
+            ],
+            "responses": [
+                "Nagamuthu sir can be found in the 2nd Floor, MC-209 room",
+                "Nagamuthu sir, Faculty , works in the 2nd Floor, MC-209 room of the MCA department",
+                "Nagamuthu sir, who's working as Faculty, can be found in 2nd Floor, MC-209 room of MCA"
+            ]
+        },
+        {
+            "tag": "Prashanth sir_location",
+            "patterns": [
+                "Prashanth sir",
+                "Where can I find Prashanth sir",
+                "Where will Prashanth sir be",
+                "Where is the cabin of Prashanth sir",
+                "Where does Prashanth sir work",
+                "How can I find Prashanth sir",
+                "How can I meet Prashanth sir"
+            ],
+            "responses": [
+                "Prashanth sir can be found in the 2nd Floor, MC-209 room",
+                "Prashanth sir, Faculty , works in the 2nd Floor, MC-209 room of the MCA department",
+                "Prashanth sir, who's working as Faculty, can be found in 2nd Floor, MC-209 room of MCA"
+            ]
+        },
+        {
+            "tag": "Anupama ma'am_location",
+            "patterns": [
+                "Anupama ma'am",
+                "Where can I find Anupama ma'am",
+                "Where will Anupama ma'am be",
+                "Where is the cabin of Anupama ma'am",
+                "Where does Anupama ma'am work",
+                "How can I find Anupama ma'am",
+                "How can I meet Anupama ma'am"
+            ],
+            "responses": [
+                "Anupama ma'am can be found in the 3rd Floor, MC-305 room",
+                "Anupama ma'am, Faculty , works in the 3rd Floor, MC-305 room of the MCA department",
+                "Anupama ma'am, who's working as Faculty, can be found in 3rd Floor, MC-305 room of MCA"
+            ]
+        },
+        {
+            "tag": "Deepika ma'am_location",
+            "patterns": [
+                "Deepika ma'am",
+                "Where can I find Deepika ma'am",
+                "Where will Deepika ma'am be",
+                "Where is the cabin of Deepika ma'am",
+                "Where does Deepika ma'am work",
+                "How can I find Deepika ma'am",
+                "How can I meet Deepika ma'am"
+            ],
+            "responses": [
+                "Deepika ma'am can be found in the 3rd Floor, MC-305 room",
+                "Deepika ma'am, Faculty , works in the 3rd Floor, MC-305 room of the MCA department",
+                "Deepika ma'am, who's working as Faculty, can be found in 3rd Floor, MC-305 room of MCA"
+            ]
+        },
+        {
+            "tag": "Chandrashekar sir_location",
+            "patterns": [
+                "Chandrashekar sir",
+                "Where can I find Chandrashekar sir",
+                "Where will Chandrashekar sir be",
+                "Where is the cabin of Chandrashekar sir",
+                "Where does Chandrashekar sir work",
+                "How can I find Chandrashekar sir",
+                "How can I meet Chandrashekar sir"
+            ],
+            "responses": [
+                "Chandrashekar sir can be found in the 3rd Floor, MC-303 room",
+                "Chandrashekar sir, Faculty , works in the 3rd Floor, MC-303 room of the MCA department",
+                "Chandrashekar sir, who's working as Faculty, can be found in 3rd Floor, MC-303 room of MCA"
+            ]
+        },
+        {
+            "tag": "Renuka ma'am_location",
+            "patterns": [
+                "Renuka ma'am",
+                "Where can I find Renuka ma'am",
+                "Where will Renuka ma'am be",
+                "Where is the cabin of Renuka ma'am",
+                "Where does Renuka ma'am work",
+                "How can I find Renuka ma'am",
+                "How can I meet Renuka ma'am"
+            ],
+            "responses": [
+                "Renuka ma'am can be found in the 3rd Floor, MC-303 room",
+                "Renuka ma'am, Faculty , works in the 3rd Floor, MC-303 room of the MCA department",
+                "Renuka ma'am, who's working as Faculty, can be found in 3rd Floor, MC-303 room of MCA"
+            ]
+        },
+        {
+            "tag": "_location",
+            "patterns": [
+                "",
+                "Where can I find ",
+                "Where will  be",
+                "Where is the cabin of ",
+                "Where does  work",
+                "How can I find ",
+                "How can I meet "
+            ],
+            "responses": [
+                " can be found in the 1st Floor, AIMLCR-01 room",
+                ",  , works in the 1st Floor, AIMLCR-01 room of the AIML department",
+                ", who's working as , can be found in 1st Floor, AIMLCR-01 room of AIML"
+            ]
+        },
+        {
+            "tag": "_location",
+            "patterns": [
+                "",
+                "Where can I find ",
+                "Where will  be",
+                "Where is the cabin of ",
+                "Where does  work",
+                "How can I find ",
+                "How can I meet "
+            ],
+            "responses": [
+                " can be found in the 2nd Floor, MC-206 room",
+                ",  , works in the 2nd Floor, MC-206 room of the MCA department",
+                ", who's working as , can be found in 2nd Floor, MC-206 room of MCA"
+            ]
+        },
+        {
+            "tag": "_location",
+            "patterns": [
+                "",
+                "Where can I find ",
+                "Where will  be",
+                "Where is the cabin of ",
+                "Where does  work",
+                "How can I find ",
+                "How can I meet "
+            ],
+            "responses": [
+                " can be found in the 2nd Floor, MC-210 room",
+                ",  , works in the 2nd Floor, MC-210 room of the MCA department",
+                ", who's working as , can be found in 2nd Floor, MC-210 room of MCA"
+            ]
+        },
+        {
+            "tag": "_location",
+            "patterns": [
+                "",
+                "Where can I find ",
+                "Where will  be",
+                "Where is the cabin of ",
+                "Where does  work",
+                "How can I find ",
+                "How can I meet "
+            ],
+            "responses": [
+                " can be found in the 2nd Floor, Multimedia Class Room room",
+                ",  , works in the 2nd Floor, Multimedia Class Room room of the MCA department",
+                ", who's working as , can be found in 2nd Floor, Multimedia Class Room room of MCA"
+            ]
+        },
+        {
+            "tag": "_location",
+            "patterns": [
+                "",
+                "Where can I find ",
+                "Where will  be",
+                "Where is the cabin of ",
+                "Where does  work",
+                "How can I find ",
+                "How can I meet "
+            ],
+            "responses": [
+                " can be found in the 1st Floor, AIMLCR-02 room",
+                ",  , works in the 1st Floor, AIMLCR-02 room of the AIML department",
+                ", who's working as , can be found in 1st Floor, AIMLCR-02 room of AIML"
+            ]
+        },
+        {
+            "tag": "_location",
+            "patterns": [
+                "",
+                "Where can I find ",
+                "Where will  be",
+                "Where is the cabin of ",
+                "Where does  work",
+                "How can I find ",
+                "How can I meet "
+            ],
+            "responses": [
+                " can be found in the 2nd Floor, MC-202 room",
+                ",  , works in the 2nd Floor, MC-202 room of the MCA department",
+                ", who's working as , can be found in 2nd Floor, MC-202 room of MCA"
+            ]
+        },
+        {
+            "tag": "_location",
+            "patterns": [
+                "",
+                "Where can I find ",
+                "Where will  be",
+                "Where is the cabin of ",
+                "Where does  work",
+                "How can I find ",
+                "How can I meet "
+            ],
+            "responses": [
+                " can be found in the 3rd Floor, AIMLCR-03 room",
+                ",  , works in the 3rd Floor, AIMLCR-03 room of the AIML department",
+                ", who's working as , can be found in 3rd Floor, AIMLCR-03 room of AIML"
+            ]
+        },
+        {
+            "tag": "_location",
+            "patterns": [
+                "",
+                "Where can I find ",
+                "Where will  be",
+                "Where is the cabin of ",
+                "Where does  work",
+                "How can I find ",
+                "How can I meet "
+            ],
+            "responses": [
+                " can be found in the 2nd Floor, AIML-311 room",
+                ",  , works in the 2nd Floor, AIML-311 room of the AIML department",
+                ", who's working as , can be found in 2nd Floor, AIML-311 room of AIML"
+            ]
+        },
+        {
+            "tag": "_location",
+            "patterns": [
+                "",
+                "Where can I find ",
+                "Where will  be",
+                "Where is the cabin of ",
+                "Where does  work",
+                "How can I find ",
+                "How can I meet "
+            ],
+            "responses": [
+                " can be found in the 2nd Floor, AIML-310 room",
+                ",  , works in the 2nd Floor, AIML-310 room of the AIML department",
+                ", who's working as , can be found in 2nd Floor, AIML-310 room of AIML"
+            ]
+        },
+        {
+            "tag": "_location",
+            "patterns": [
+                "",
+                "Where can I find ",
+                "Where will  be",
+                "Where is the cabin of ",
+                "Where does  work",
+                "How can I find ",
+                "How can I meet "
+            ],
+            "responses": [
+                " can be found in the 3rd Floor, MC-307A room",
+                ",  , works in the 3rd Floor, MC-307A room of the MCA department",
+                ", who's working as , can be found in 3rd Floor, MC-307A room of MCA"
+            ]
+        },
+        {
+            "tag": "_location",
+            "patterns": [
+                "",
+                "Where can I find ",
+                "Where will  be",
+                "Where is the cabin of ",
+                "Where does  work",
+                "How can I find ",
+                "How can I meet "
+            ],
+            "responses": [
+                " can be found in the 2nd Floor, AIML-305 room",
+                ",  , works in the 2nd Floor, AIML-305 room of the AIML department",
+                ", who's working as , can be found in 2nd Floor, AIML-305 room of AIML"
+            ]
+        },
+        {
+            "tag": "Vijayalakshmi ma'am_designation",
+            "patterns": [
+                "Vijayalakshmi ma'am",
+                "Who is Vijayalakshmi ma'am",
+                "What does Vijayalakshmi ma'am do?",
+                "In which department does Vijayalakshmi ma'am work for?"
+            ],
+            "responses": [
+                "Vijayalakshmi ma'am works as Associate Professor in the AIML Department."
+            ]
+        },
+        {
+            "tag": "Narasimha sir_designation",
+            "patterns": [
+                "Narasimha sir",
+                "Who is Narasimha sir",
+                "What does Narasimha sir do?",
+                "In which department does Narasimha sir work for?"
+            ],
+            "responses": [
+                "Narasimha sir works as Assistant Professor in the AIML Department."
+            ]
+        },
+        {
+            "tag": "Babu sir_designation",
+            "patterns": [
+                "Babu sir",
+                "Who is Babu sir",
+                "What does Babu sir do?",
+                "In which department does Babu sir work for?"
+            ],
+            "responses": [
+                "Babu sir works as Head of Department in the AIML Department."
+            ]
+        },
+        {
+            "tag": "Somesh sir_designation",
+            "patterns": [
+                "Somesh sir",
+                "Who is Somesh sir",
+                "What does Somesh sir do?",
+                "In which department does Somesh sir work for?"
+            ],
+            "responses": [
+                "Somesh sir works as Assistant Professor in the AIML Department."
+            ]
+        },
+        {
+            "tag": "Chandrani ma'am_designation",
+            "patterns": [
+                "Chandrani ma'am",
+                "Who is Chandrani ma'am",
+                "What does Chandrani ma'am do?",
+                "In which department does Chandrani ma'am work for?"
+            ],
+            "responses": [
+                "Chandrani ma'am works as Faculty in the MCA Department."
+            ]
+        },
+        {
+            "tag": "Divya ma'am_designation",
+            "patterns": [
+                "Divya ma'am",
+                "Who is Divya ma'am",
+                "What does Divya ma'am do?",
+                "In which department does Divya ma'am work for?"
+            ],
+            "responses": [
+                "Divya ma'am works as Faculty in the MCA Department."
+            ]
+        },
+        {
+            "tag": "Savitha ma'am_designation",
+            "patterns": [
+                "Savitha ma'am",
+                "Who is Savitha ma'am",
+                "What does Savitha ma'am do?",
+                "In which department does Savitha ma'am work for?"
+            ],
+            "responses": [
+                "Savitha ma'am works as Faculty in the MCA Department."
+            ]
+        },
+        {
+            "tag": "Jayasimha sir_designation",
+            "patterns": [
+                "Jayasimha sir",
+                "Who is Jayasimha sir",
+                "What does Jayasimha sir do?",
+                "In which department does Jayasimha sir work for?"
+            ],
+            "responses": [
+                "Jayasimha sir works as Faculty in the MCA Department."
+            ]
+        },
+        {
+            "tag": "Usha ma'am_designation",
+            "patterns": [
+                "Usha ma'am",
+                "Who is Usha ma'am",
+                "What does Usha ma'am do?",
+                "In which department does Usha ma'am work for?"
+            ],
+            "responses": [
+                "Usha ma'am works as Faculty in the MCA Department."
+            ]
+        },
+        {
+            "tag": "Jasmine ma'am_designation",
+            "patterns": [
+                "Jasmine ma'am",
+                "Who is Jasmine ma'am",
+                "What does Jasmine ma'am do?",
+                "In which department does Jasmine ma'am work for?"
+            ],
+            "responses": [
+                "Jasmine ma'am works as Faculty in the MCA Department."
+            ]
+        },
+        {
+            "tag": "Saravanan sir_designation",
+            "patterns": [
+                "Saravanan sir",
+                "Who is Saravanan sir",
+                "What does Saravanan sir do?",
+                "In which department does Saravanan sir work for?"
+            ],
+            "responses": [
+                "Saravanan sir works as Faculty in the MCA Department."
+            ]
+        },
+        {
+            "tag": "Ashwini ma'am_designation",
+            "patterns": [
+                "Ashwini ma'am",
+                "Who is Ashwini ma'am",
+                "What does Ashwini ma'am do?",
+                "In which department does Ashwini ma'am work for?"
+            ],
+            "responses": [
+                "Ashwini ma'am works as Faculty in the MCA Department."
+            ]
+        },
+        {
+            "tag": "Preethi ma'am_designation",
+            "patterns": [
+                "Preethi ma'am",
+                "Who is Preethi ma'am",
+                "What does Preethi ma'am do?",
+                "In which department does Preethi ma'am work for?"
+            ],
+            "responses": [
+                "Preethi ma'am works as Faculty in the MCA Department."
+            ]
+        },
+        {
+            "tag": "Nagamuthu sir_designation",
+            "patterns": [
+                "Nagamuthu sir",
+                "Who is Nagamuthu sir",
+                "What does Nagamuthu sir do?",
+                "In which department does Nagamuthu sir work for?"
+            ],
+            "responses": [
+                "Nagamuthu sir works as Faculty in the MCA Department."
+            ]
+        },
+        {
+            "tag": "Prashanth sir_designation",
+            "patterns": [
+                "Prashanth sir",
+                "Who is Prashanth sir",
+                "What does Prashanth sir do?",
+                "In which department does Prashanth sir work for?"
+            ],
+            "responses": [
+                "Prashanth sir works as Faculty in the MCA Department."
+            ]
+        },
+        {
+            "tag": "Anupama ma'am_designation",
+            "patterns": [
+                "Anupama ma'am",
+                "Who is Anupama ma'am",
+                "What does Anupama ma'am do?",
+                "In which department does Anupama ma'am work for?"
+            ],
+            "responses": [
+                "Anupama ma'am works as Faculty in the MCA Department."
+            ]
+        },
+        {
+            "tag": "Deepika ma'am_designation",
+            "patterns": [
+                "Deepika ma'am",
+                "Who is Deepika ma'am",
+                "What does Deepika ma'am do?",
+                "In which department does Deepika ma'am work for?"
+            ],
+            "responses": [
+                "Deepika ma'am works as Faculty in the MCA Department."
+            ]
+        },
+        {
+            "tag": "Chandrashekar sir_designation",
+            "patterns": [
+                "Chandrashekar sir",
+                "Who is Chandrashekar sir",
+                "What does Chandrashekar sir do?",
+                "In which department does Chandrashekar sir work for?"
+            ],
+            "responses": [
+                "Chandrashekar sir works as Faculty in the MCA Department."
+            ]
+        },
+        {
+            "tag": "Renuka ma'am_designation",
+            "patterns": [
+                "Renuka ma'am",
+                "Who is Renuka ma'am",
+                "What does Renuka ma'am do?",
+                "In which department does Renuka ma'am work for?"
+            ],
+            "responses": [
+                "Renuka ma'am works as Faculty in the MCA Department."
+            ]
+        },
+        {
+            "tag": "_designation",
+            "patterns": [
+                "",
+                "Who is ",
+                "What does  do?",
+                "In which department does  work for?"
+            ],
+            "responses": [
+                " works as  in the AIML Department."
+            ]
+        },
+        {
+            "tag": "_designation",
+            "patterns": [
+                "",
+                "Who is ",
+                "What does  do?",
+                "In which department does  work for?"
+            ],
+            "responses": [
+                " works as  in the MCA Department."
+            ]
+        },
+        {
+            "tag": "_designation",
+            "patterns": [
+                "",
+                "Who is ",
+                "What does  do?",
+                "In which department does  work for?"
+            ],
+            "responses": [
+                " works as  in the MCA Department."
+            ]
+        },
+        {
+            "tag": "_designation",
+            "patterns": [
+                "",
+                "Who is ",
+                "What does  do?",
+                "In which department does  work for?"
+            ],
+            "responses": [
+                " works as  in the MCA Department."
+            ]
+        },
+        {
+            "tag": "_designation",
+            "patterns": [
+                "",
+                "Who is ",
+                "What does  do?",
+                "In which department does  work for?"
+            ],
+            "responses": [
+                " works as  in the AIML Department."
+            ]
+        },
+        {
+            "tag": "_designation",
+            "patterns": [
+                "",
+                "Who is ",
+                "What does  do?",
+                "In which department does  work for?"
+            ],
+            "responses": [
+                " works as  in the MCA Department."
+            ]
+        },
+        {
+            "tag": "_designation",
+            "patterns": [
+                "",
+                "Who is ",
+                "What does  do?",
+                "In which department does  work for?"
+            ],
+            "responses": [
+                " works as  in the AIML Department."
+            ]
+        },
+        {
+            "tag": "_designation",
+            "patterns": [
+                "",
+                "Who is ",
+                "What does  do?",
+                "In which department does  work for?"
+            ],
+            "responses": [
+                " works as  in the AIML Department."
+            ]
+        },
+        {
+            "tag": "_designation",
+            "patterns": [
+                "",
+                "Who is ",
+                "What does  do?",
+                "In which department does  work for?"
+            ],
+            "responses": [
+                " works as  in the AIML Department."
+            ]
+        },
+        {
+            "tag": "_designation",
+            "patterns": [
+                "",
+                "Who is ",
+                "What does  do?",
+                "In which department does  work for?"
+            ],
+            "responses": [
+                " works as  in the MCA Department."
+            ]
+        },
+        {
+            "tag": "_designation",
+            "patterns": [
+                "",
+                "Who is ",
+                "What does  do?",
+                "In which department does  work for?"
+            ],
+            "responses": [
+                " works as  in the AIML Department."
+            ]
+        }
+    ]
+}
