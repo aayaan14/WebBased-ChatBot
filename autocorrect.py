@@ -1,18 +1,29 @@
 import nltk
-nltk.download('words')
+#nltk.download('words')
 from nltk.metrics.distance import jaccard_distance
 from nltk.util import ngrams
 from nltk.corpus import words
 
+import csv
+from traceback import print_tb
+
 def converter():
     c=0
     correct_words = words.words()
-    prof_names = ["narasimha","vijayalakshmi","somesh","dheeraj"]
+    
+    prof_names = []
+
+    with open('sample_data.csv',mode='r') as file:
+        csvFile = csv.reader(file)
+        i=1
+        for lines in csvFile:
+            if i==1:
+                prof_names = lines[1:]
+    print(prof_names)
     for i in prof_names:
         correct_words.append(i)
     # incorrect_words=[]
-    print(correct_words[0])
-    s = input("Enter a sentence: ")
+    
     s = s.split(" ")
     for i,word in enumerate(s):
         if word not in correct_words:  # if the word is wrongly spelt
@@ -22,6 +33,5 @@ def converter():
             s[i]= sorted(temp, key = lambda val:val[0])[0][1]   # replace wrongly spelt word with closest correct word
             c+=1
 
-    print(" ".join(s))
+    return (" ".join(s))
 
-converter()

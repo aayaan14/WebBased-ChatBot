@@ -3,6 +3,8 @@ import json
 
 import torch
 
+from autocorrect import converter
+
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
@@ -52,7 +54,7 @@ if __name__ == "__main__":
     print("Let's chat! (type 'quit' to exit)")
     while True:
         # sentence = "do you use credit cards?"
-        sentence = input("You: ")
+        sentence = converter(input("You: "))
         if sentence == "quit":
             break
 
